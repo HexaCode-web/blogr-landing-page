@@ -1,6 +1,6 @@
 html,
 body {
-  overflow-x: initial;
+  overflow-x: hidden;
   padding: 0;
   margin: 0;
 }
@@ -49,7 +49,9 @@ header #header {
   justify-content: space-between;
 }
 .listItems {
-  transform: translate(-10px, 9px);
+  font-weight: bolder;
+  font-family: "Overpass Mono", monospace;
+  transform: translate(0px, 9px);
   position: absolute;
   width: 60px;
   background-color: white;
@@ -180,13 +182,15 @@ header #content {
   width: 30px;
 }
 #mobMenu {
+  left: -55px;
   display: none;
   transform: translate(100px, 150px);
   border-radius: 20px;
   position: absolute;
   width: 300px;
   background-color: white;
-  /* height: 300px; */
+  height: fit-content;
+  padding-bottom: 15px;
 }
 @keyframes slidefromright {
   0% {
@@ -366,7 +370,7 @@ footer .title {
   .listItems {
     width: 80px;
     position: static;
-    font-size: 1rem;
+    font-size: 1.2rem;
     background-color: lightgray;
   }
   .listItems a:hover {
@@ -431,7 +435,7 @@ footer .title {
   }
   #sec2 #text {
     margin-top: 0;
-    width: 100%;
+    width: 95%;
   }
   #sec2 img {
     margin: auto;
